@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
+import { MatButtonModule } from '@angular/material/button';
+import { ButtonComponentModule } from '../widgets/components/button';
 import { ExtranetRoutingModule } from './extranet-routing.module';
 import { ExtranetComponent } from './extranet.component';
-import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +11,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     ExtranetComponent
   ],
   imports: [
-    SharedModule,
+    MatButtonModule,
+    ButtonComponentModule,
     ExtranetRoutingModule
   ]
 })

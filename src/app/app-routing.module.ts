@@ -6,13 +6,13 @@ const appRoutes: Routes = [
   {
     path: 'extranet',
     loadChildren: () =>
-      import('./modules/extranet/extranet.module')
+      import('./extranet/extranet.module')
       .then(m => m.ExtranetModule)
   },
   {
     path: 'intranet',
     loadChildren: () =>
-      import('./modules/intranet/intranet.module')
+      import('./intranet/intranet.module')
       .then(m => m.IntranetModule)
   },
   {
